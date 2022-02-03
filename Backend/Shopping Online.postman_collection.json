@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "e2b62710-2e30-4f78-ae4c-a10cf69e3c54",
+		"name": "Shopping Online",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22434110"
+	},
+	"item": [
+		{
+			"name": "products-controller",
+			"item": [
+				{
+					"name": "GET products count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/products/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"products",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET one product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/products/63700356ed5bbf07a0ff7303",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"products",
+								"63700356ed5bbf07a0ff7303"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST new product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productName",
+									"value": "M&M 220g Yellow",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "19.9",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/nivyulevitch/Downloads/m&m.jpeg"
+								},
+								{
+									"key": "categoryId",
+									"value": "636f60fde24a1a8c8cd52daa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT existing product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productName",
+									"value": "m&m 220g yellow",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "categoryId",
+									"value": "636f60fde24a1a8c8cd52daa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/products/63700356ed5bbf07a0ff7303",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"products",
+								"63700356ed5bbf07a0ff7303"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth-controller",
+			"item": [
+				{
+					"name": "POST register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Bart\",\n    \"lastName\": \"Simpson\",\n    \"username\": \"bart@gmail.com\",\n    \"password\": \"123456\",\n    \"idNumber\": \"123456789\",\n    \"street\": \"Springfilled\",\n    \"city\": \"Haifa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"bart@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "carts-controller",
+			"item": [
+				{
+					"name": "GET cart by user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/cart-by-user/6370071cae75ce148913f77c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"cart-by-user",
+								"6370071cae75ce148913f77c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cart-items-controller",
+			"item": [
+				{
+					"name": "POST new items to cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quantity\": 2,\n    \"total\": 2,\n    \"productId\": \"63700356ed5bbf07a0ff7303\",\n    \"cartId\": \"63700a1683e80cc98cb68866\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/items/6370071cae75ce148913f77c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"items",
+								"6370071cae75ce148913f77c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET all items by cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/items-by-cart/63700a1683e80cc98cb68866",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"items-by-cart",
+								"63700a1683e80cc98cb68866"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE item from cart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/items/63700356ed5bbf07a0ff7303/637008a8ae75ce148913f785",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"items",
+								"63700356ed5bbf07a0ff7303",
+								"637008a8ae75ce148913f785"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE all cart",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/items/63700a1683e80cc98cb68866",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"items",
+								"63700a1683e80cc98cb68866"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders-controller",
+			"item": [
+				{
+					"name": "GET all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET orders count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/orders/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"orders",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST new order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"finalPrice\": 40,\n    \"deliveryCity\": \"Haifa\",\n    \"deliveryStreet\": \"Springfilled\",\n    \"deliveryDate\": \"2022-11-13\",\n    \"CreditCard\": 1234123412341234,\n    \"userId\": \"6370071cae75ce148913f77c\",\n    \"cartId\": \"637008a8ae75ce148913f785\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzNzAwNzFjYWU3NWNlMTQ4OTEzZjc3YyIsImZpcnN0TmFtZSI6IkJhcnQiLCJsYXN0TmFtZSI6IlNpbXBzb24iLCJ1c2VybmFtZSI6ImJhcnRAZ21haWwuY29tIiwicGFzc3dvcmQiOiI5N2JmY2U3OGI0NjZjMzEyY2YxNDhhNTZjMThhNjgwMGExNDc1ZDI3NmEzMjk1YzBlNmRhZDYxZTNjZDZmOTUxNTM5NjZhYzQ1MmNlZTliZTAyOTUwNjZhMmM5NjQ4NGM3YTc2MDIwNDI1NDA1ODY5YTRmNDNhN2Q0NzUwNDBhNSIsImlkTnVtYmVyIjoiMmE2YmZiOTllNzRlNzNlYzhjZjRhNDg2N2RmZTU3OGIyNTFiZDA1NWYwMDFjZjc4ZjdkNzJmODFjMzkzMGFkYzIxNzZlNWJiN2QzNjc3ZDY4M2NmMGM5ZjUyZTE4YzhjZGNlZmI2ZmZjM2U1MjE4MzhjMjNlZmUwZTJjZGRiMzkiLCJzdHJlZXQiOiJTcHJpbmdmaWxsZWQiLCJjaXR5IjoiSGFpZmEiLCJyb2xlIjoxfSwiaWF0IjoxNjY4MzU0Njk3LCJleHAiOjE2NjgzNjE4OTd9.WBU-Mnjo3wr0CMxg1sCezreDdUOZwu0cX_6Twd9rV58",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

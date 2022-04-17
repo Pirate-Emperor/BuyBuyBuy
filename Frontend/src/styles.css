@@ -1,0 +1,58 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-width: 750px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.highlight {
+    background-color: plum;
+    font-weight: bold;
+}
+
+.mat-dialog-container {
+    background-color: rgb(219, 226, 239) !important;
+}
+
+/* scroll bar styling */
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(150, 145, 145);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(129, 123, 123);
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+    background-color: rgb(129, 123, 123);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: rgb(150, 145, 145);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: rgb(129, 123, 123);
+}

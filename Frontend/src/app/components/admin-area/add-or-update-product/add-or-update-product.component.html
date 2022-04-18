@@ -1,0 +1,8 @@
+<div>
+    <button mat-raised-button *ngIf="editWasClicked && !isAddAction" (click)="addProduct()" class="go-to-add-product">
+        <mat-icon>add</mat-icon>&nbsp;Add Product
+    </button>
+    <app-add-product *ngIf="isAddAction" [addButtonClicked]="isAddAction"></app-add-product>
+    <app-update-product [ngStyle]="{ 'display' : isAddAction ? 'none' : 'block'}" [editProduct]="product">
+    </app-update-product>
+</div>

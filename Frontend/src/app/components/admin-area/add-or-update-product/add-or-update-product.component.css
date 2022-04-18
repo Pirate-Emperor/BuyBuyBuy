@@ -1,0 +1,21 @@
+.hideEditPanel {
+    display: block;
+}
+
+.go-to-add-product {
+    color: rgb(17, 45, 78);
+    position: relative;
+    bottom: 7px;
+    text-decoration: auto;
+    float: right;
+    margin-top: 12px;
+    margin-right: 21px;
+    background-color: rgb(17, 45, 78);
+    color: rgb(249, 247, 247);
+}
+
+.go-to-add-product:hover {
+    background-color: rgba(17, 45, 77, 0.6);
+    text-decoration: underline;
+    cursor: pointer;
+}

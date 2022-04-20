@@ -1,0 +1,61 @@
+.admin-layout {
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.add-and-update,
+app-add-product,
+app-update-product {
+    background: lightblue;
+    border: 1px solid black;
+    height: 80%;
+    width: 30%;
+    border-radius: 8px;
+}
+
+mat-sidenav-container {
+    height: 100%;
+    position: relative;
+}
+
+mat-sidenav {
+    background-color: rgba(219, 226, 239, 0.3);
+    ;
+    width: 400px;
+    margin: auto;
+    border-radius: 0px 8px 8px 0;
+}
+
+.mat-drawer-container {
+    background-color: transparent;
+}
+
+.product-and-category {
+    display: flex;
+    flex-direction: column;
+}
+
+.action-button {
+    height: 51px;
+    width: 55px;
+    border: 1px solid lightgray;
+    border-radius: 0px 8px 8px 0px;
+    z-index: 10000000;
+    background-color: rgba(255, 165, 0, 0.5);
+    top: 266px;
+    position: fixed;
+}
+
+.action-button:hover {
+    cursor: pointer;
+}
+
+.tab-icon {
+    top: 15px;
+    position: relative;
+    left: 14px;
+}

@@ -1,0 +1,10 @@
+<div>
+    <ng-container *ngIf="!user">
+        <span>Hello Guest</span>
+    </ng-container>
+    <ng-container *ngIf="user">
+        <span>Hello {{user.firstName}} {{user.lastName}}</span>
+        <span> | </span>
+        <a class="logout-icon" title="logout" routerLink="/logout">Logout</a>
+    </ng-container>
+</div>

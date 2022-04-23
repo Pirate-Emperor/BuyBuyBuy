@@ -1,0 +1,95 @@
+form {
+    width: 295px;
+    margin: 3px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
+    font-size: 14px
+}
+
+button {
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+mat-label {
+    font-size: 20px;
+}
+
+mat-hint {
+    color: red;
+}
+
+.login-box {
+    display: inline-block;
+    margin: 10px;
+    padding: 0 10px;
+    border-radius: 8px;
+    text-align: left;
+    background: rgb(219, 226, 239);
+}
+
+.start-shopping-image {
+    height: 150px;
+}
+
+.start-btn {
+    background-color: rgba(17, 45, 78, 0.4);
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: rgb(144, 195, 122);
+    color: rgb(70, 70, 70);
+    border-radius: 8px;
+}
+
+.login-btn:hover {
+    background-color: rgba(144, 195, 122, 0.6);
+    cursor: pointer;
+}
+
+.login-btn:disabled {
+    background-color: rgba(144, 195, 122, 0.6);
+    color: rgb(70, 70, 70);
+
+}
+
+.mat-form-field {
+    display: block !important;
+}
+
+.sign-up-btn {
+    background-color: rgb(237, 183, 144);
+    color: rgb(70, 70, 70);
+    border-radius: 8px;
+}
+
+.sign-up-btn:hover {
+    background-color: rgba(237, 183, 144, 0.8);
+    color: rgb(70, 70, 70);
+}
+
+.dont-have-an-account {
+    margin-right: 23px;
+    margin-left: 23px;
+}
+
+.start-shopping-header {
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}

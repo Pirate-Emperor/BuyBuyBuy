@@ -1,0 +1,49 @@
+<!-- If user not logged in: -->
+<div class="login-box" *ngIf="!user">
+    <form (ngSubmit)="submit()" #formBox="ngForm">
+        <mat-form-field floatLabel="always" appearance="fill">
+            <mat-label>Email: </mat-label>
+            <input matInput autofocus type="email" name="username" [(ngModel)]="credentials.username"
+                placeholder="example@gmail.com" #usernameBox="ngModel" required minlength="2" maxlength="100"
+                pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+            <mat-hint align="end" *ngIf="usernameBox.touched && usernameBox.errors?.['required']">Missing
+                email</mat-hint>
+            <mat-hint align="end" *ngIf="usernameBox.touched && usernameBox.errors?.['minlength']">Email is too
+                short</mat-hint>
+            <mat-hint align="end" *ngIf="usernameBox.touched && usernameBox.errors?.['maxlength']">Email is too
+                long</mat-hint>
+            <mat-hint align="end"
+                *ngIf="!usernameBox.errors?.['required'] &&!usernameBox.errors?.['minlength'] && !usernameBox.errors?.['maxlength'] && usernameBox.errors?.['pattern']">Email
+                is invalid</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" appearance="fill">
+            <mat-label>Password: </mat-label>
+            <input matInput type="password" name="password" [(ngModel)]="credentials.password" placeholder="********"
+                #passwordBox="ngModel" required minlength="2" maxlength="128">
+            <mat-hint align="end" *ngIf="passwordBox.touched && passwordBox.errors?.['required']">Missing
+                password</mat-hint>
+            <mat-hint align="end" *ngIf="passwordBox.touched && passwordBox.errors?.['minlength']">Password is too
+                short</mat-hint>
+            <mat-hint align="end" *ngIf="passwordBox.touched && passwordBox.errors?.['maxlength']">Password is too
+                long</mat-hint>
+        </mat-form-field>
+
+        <button mat-raised-button [disabled]="formBox.invalid" class="login-btn">
+            <mat-icon>login</mat-icon>&nbsp;Login</button>
+
+    </form>
+    <!-- Register new user -->
+    <p class="dont-have-an-account">Don't have an account?
+        <button class="sign-up-btn" mat-raised-button [routerLink]="'/register'">
+            <mat-icon>app_registration</mat-icon>&nbsp;Sign up
+        </button>
+    </p>
+</div>
+
+<!-- If user is logged in: -->
+<div *ngIf="user">
+    <button mat-raised-button routerLink="/shopping" class="start-btn">
+        <div class="start-shopping-header"> {{getLoggedInState()}}</div>
+    </button>
+</div>

@@ -1,0 +1,21 @@
+<div class="main-div-register-form">
+    <div>
+        <mat-horizontal-stepper linear #stepper>
+            <!-- Step One: User register: -->
+            <mat-step label="Register">
+                <app-register-step-one (userStepOneDetails)="userInfoFromStepOne($event)"></app-register-step-one>
+            </mat-step>
+            <!-- Step Two: Contact information: -->
+            <mat-step label="Contact Information" completed="false">
+                <app-register-step-two (userStepTwoDetails)="userInfoFromStepTwo($event)"></app-register-step-two>
+            </mat-step>
+        </mat-horizontal-stepper>
+        <!-- Go back button -->
+        <div class='return-btn'>
+            <a class="go-to-login-link" routerLink="/home/">
+                <mat-icon>arrow_back</mat-icon>&nbsp;
+                <div class="go-to-login-text">Go to login</div>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+form {
+    width: 295px;
+    margin: 3px;
+    padding: 20px;
+}
+
+span {
+    color: red;
+}
+
+button {
+    /* width: 100%; */
+    margin: 10px 0 20px 0;
+}
+
+mat-hint {
+    color: red;
+}
+
+.mat-form-field {
+    display: block;
+    position: relative;
+    text-align: left;
+    width: 357px;
+    font-size: 16px
+}
+
+
+.go-forward-btn {
+    background-color: rgb(144, 195, 122);
+    color: rgb(70, 70, 70);
+    width: 360px;
+}
+
+.go-forward-btn:disabled {
+    background-color: rgba(144, 195, 122, 0.6);
+    color: rgb(70, 70, 70);
+}

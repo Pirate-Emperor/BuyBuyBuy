@@ -1,0 +1,40 @@
+form {
+    width: 295px;
+    margin: 3px;
+    padding: 20px;
+}
+
+button {
+    /* width: 100%; */
+    margin: 10px 0 20px 0;
+}
+
+mat-hint {
+    color: red;
+}
+
+.mat-form-field {
+    display: block;
+    position: relative;
+    text-align: left;
+    width: 357px;
+    font-size: 16px
+}
+
+.submit-btn {
+    background-color: rgb(144, 195, 122);
+    color: rgb(70, 70, 70);
+    width: 360px;
+}
+
+.submit-btn:disabled {
+    background-color: rgba(144, 195, 122, 0.6);
+    color: rgb(70, 70, 70);
+
+}
+
+.go-back-btn {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(144, 195, 122);
+    width: 360px;
+}

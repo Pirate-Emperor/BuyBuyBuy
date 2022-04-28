@@ -1,0 +1,15 @@
+.about-header {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.about-small-header {
+    font-size: 16px;
+}
+
+@media only screen and (max-width:800px) {
+    .about-header {
+        font-weight: 700;
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,79 @@
+div {
+    height: 100%;
+    position: relative;
+    color: rgb(133, 180, 196);
+}
+
+.shopping-header-1 {
+    font-size: 36px;
+    padding-top: 20px;
+    left: 154px;
+    position: absolute;
+    text-shadow: 2px 2px 3px #5f5f5f;
+}
+
+.shopping-header-1:hover {
+    cursor: pointer;
+}
+
+.shopping-header-2 {
+    font-size: 13px;
+    padding-top: 48px;
+    left: 220px;
+    position: absolute;
+    text-shadow: 1px 1px 6px #5f5f5f;
+}
+
+.shopping-header-2:hover {
+    cursor: pointer;
+}
+
+app-auth-menu {
+    position: absolute;
+    right: 50px;
+    margin-top: 2%;
+}
+
+app-search {
+    position: absolute;
+    left: 424px;
+    top: 5px;
+}
+
+::ng-deep .header-container .mat-input-element::placeholder {
+    color: lightblue;
+}
+
+@media only screen and (max-width:850px) {
+    .shopping-header-1 {
+        font-size: 25px;
+        padding-top: 48px;
+        left: 85px;
+    }
+
+    .shopping-header-2 {
+        left: 276px;
+        position: absolute;
+        bottom: 8px;
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    .shopping-header-1 {
+        font-size: 25px;
+        padding-top: 48px;
+        left: 85px;
+    }
+
+    .shopping-header-2 {
+        left: 276px;
+        position: absolute;
+        bottom: 8px;
+    }
+
+    app-search {
+        position: absolute;
+        left: 400px;
+        top: 5px;
+    }
+}

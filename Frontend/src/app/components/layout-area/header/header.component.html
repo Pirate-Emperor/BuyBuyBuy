@@ -1,0 +1,6 @@
+<div class="header-container">
+    <span class="shopping-header-1" routerLink={{pathByUserState}}>BuyBuyBuy</span>
+    <span class="shopping-header-2" routerLink={{pathByUserState}}>by Pirate-Emperor</span>
+    <app-search *ngIf="user && (router.url === '/shopping' || router.url === '/order')"></app-search>
+    <app-auth-menu></app-auth-menu>
+</div>

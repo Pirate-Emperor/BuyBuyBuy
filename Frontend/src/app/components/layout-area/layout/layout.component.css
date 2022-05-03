@@ -1,0 +1,24 @@
+.layout-container {
+    display: grid;
+    height: 100%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10% 85% 5%;
+}
+
+header,
+footer {
+    grid-column: span 6;
+}
+
+main {
+    grid-column: span 6;
+    overflow: auto;
+    background-color: lightblue;
+}
+
+@media only screen and (max-width:1020px) {
+    .layout-container {
+        grid-template-rows: 13% 82% 5%;
+    }
+}

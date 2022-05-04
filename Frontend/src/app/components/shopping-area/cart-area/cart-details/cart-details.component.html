@@ -1,0 +1,23 @@
+<div class="item-cart" *ngIf="item.product">
+    <div class="item-image">
+        <img [src]="productsImageUrl + item.product.imageName" />
+    </div>
+    <div class="item-desc">
+        <ng-container *ngIf="router.url === '/order'">
+            <span class="item-name" [innerHTML]="item.product.productName | highlightSearch: search"></span>
+        </ng-container>
+        <ng-container *ngIf="router.url !== '/order'">
+            <span class="item-name">{{item.product.productName}}</span>
+        </ng-container>
+        <br />
+        {{item.product.price | currency: "USD"}}
+        <br />
+        Quantity: {{item.quantity}}
+        <br />
+        Item's total: <b>{{item.quantity * item.product.price | currency:"USD"}}</b>
+    </div>
+    <div class="item-actions">
+        <img class="delete" src="/assets/images/delete.jpg" *ngIf="fromShopPage"
+            (click)="deleteThisItem(item.product._id, item.cartId )" />
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.delete-btn {
+    background-color: rgb(195, 122, 122);
+    color: rgb(70, 70, 70);
+}
+
+.delete-btn:hover {
+    background-color: rgba(195, 122, 122, 0.6);
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: rgb(17, 45, 78);
+    color: rgb(249, 247, 247);
+}
+
+.cancel-btn:hover {
+    background-color: rgba(17, 45, 78, 0.6);
+    cursor: pointer;
+}
+
+mat-dialog-actions {
+    margin: auto;
+    width: 80%;
+    padding-top: 5px;
+    padding-bottom: 0;
+}

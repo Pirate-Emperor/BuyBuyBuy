@@ -1,0 +1,28 @@
+<div class="shopping-cart-container">
+    <div class="no-items" *ngIf="allItemsByCart?.length === 0">
+        No Items
+    </div>
+    <div class="shopping-cart-header">
+        <h2 class="cart-header">Shopping Cart ({{allItemsByCart?.length}})</h2>
+        <hr>
+    </div>
+    <div class="shopping-cart-content">
+        <app-cart-details [fromShopPage]="isShoppingPage" *ngFor="let i of allItemsByCart" [item]="i"
+            (deleteItem)="deleteThisItem($event)"></app-cart-details>
+    </div>
+    <div class="shopping-cart-footer">
+        <hr>
+        <div *ngIf="totalAmount && allItemsByCart?.length !== 0">
+            <div class="total-header">Total</div>
+            <div class="total-amount">{{totalAmount | currency: "USD"}}</div>
+        </div>
+        <div class="cart-actions">
+            <div class="checkout-btn" *ngIf="allItemsByCart?.length !== 0" routerLink="/order">
+                <mat-icon class="shopping-cart-icon">shopping_cart</mat-icon>Checkout
+            </div>
+            <div *ngIf="allItemsByCart?.length !== 0" class="delete-all" (click)="deleteAllItems()"><mat-icon
+                    class="delete-cart-icon">delete_forever</mat-icon>Empty Cart
+            </div>
+        </div>
+    </div>
+</div>

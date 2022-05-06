@@ -1,0 +1,90 @@
+.shopping-cart-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 7% 80% 13%;
+    padding: 2px 12px 4px 12px;
+    box-sizing: border-box;
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.shopping-cart-content {
+    overflow: auto;
+}
+
+.shopping-cart-footer {
+    font-size: 17px;
+    z-index: 1;
+}
+
+.cart-header {
+    display: inline;
+}
+
+.cart-actions {
+    padding-top: 10px;
+    margin: auto;
+    width: 100%;
+}
+
+.shopping-cart-icon {
+    top: 8px;
+    position: relative;
+}
+
+.checkout-btn {
+    background-color: rgb(144, 195, 122);
+    color: rgb(70, 70, 70);
+    height: 38px;
+    width: 150px;
+    border-radius: 24px;
+    text-align: center;
+    display: inline-block;
+}
+
+.checkout-btn:hover {
+    background-color: rgba(144, 195, 122, 0.5);
+    cursor: pointer;
+}
+
+.delete-all {
+    background-color: rgb(195, 122, 122);
+    color: rgb(70, 70, 70);
+    height: 38px;
+    width: 150px;
+    border-radius: 24px;
+    text-align: center;
+    display: block;
+    float: right;
+}
+
+.delete-all:hover {
+    background-color: rgba(195, 122, 122, 0.5);
+    cursor: pointer;
+}
+
+.delete-cart-icon {
+    top: 8px;
+    position: relative;
+}
+
+.total-header {
+    display: inline-block;
+    font-weight: bold;
+    top: -2px;
+    position: relative;
+}
+
+.total-amount {
+    float: right;
+    font-weight: bold;
+    top: -2px;
+    position: relative;
+    right: 8px;
+}
+
+.no-items {
+    position: relative;
+    top: 200px;
+    left: 150px;
+    color: #b1abab
+}

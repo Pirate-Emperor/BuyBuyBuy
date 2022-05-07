@@ -1,0 +1,55 @@
+input,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+mat-label {
+    font-size: 18px;
+}
+
+mat-hint:not(.old-color):not(.populate-info) {
+    color: red;
+}
+
+.populate-info {
+    font-size: smaller;
+}
+
+.add-order-btn {
+    background-color: rgb(144, 195, 122);
+    color: rgb(70, 70, 70);
+    width: 100%;
+    margin-top: 19px;
+}
+
+.add-order-btn:hover {
+    background-color: rgba(144, 195, 122, 0.5);
+    cursor: pointer;
+}
+
+.add-order-btn:disabled {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: auto;
+}
+
+.mat-form-field {
+    display: block !important;
+}
+
+@media only screen and (max-width:950px) {
+
+    mat-form-field,
+    .add-order-btn {
+        width: 256px;
+    }
+}
+
+@media only screen and (max-width:615px) {
+    .add-order-btn {
+        margin-bottom: 18px;
+    }
+
+}

@@ -1,0 +1,10 @@
+.receipt {
+    display: inline-block;
+    color: rgb(17, 45, 78);
+    text-decoration: underline;
+}
+
+.receipt:hover {
+    color: rgb(255, 165, 0);
+    cursor: pointer;
+}

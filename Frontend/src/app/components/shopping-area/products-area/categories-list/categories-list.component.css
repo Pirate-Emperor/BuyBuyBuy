@@ -1,0 +1,34 @@
+mat-tab-group {
+    margin: auto;
+    padding-left: 57px;
+}
+
+::ng-deep .mat-tab-label,
+::ng-deep .mat-tab-label-content {
+    min-width: 0px !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    min-width: 112px !important;
+    white-space: break-spaces !important;
+    color: rgb(17, 45, 78) !important;
+}
+
+::ng-deep .mat-tab-label:hover {
+    background-color: rgba(17, 45, 78, 0.1) !important;
+}
+
+::ng-deep .mat-tab-label-active {
+    background-color: rgba(17, 45, 78, 0.1) !important;
+}
+
+::ng-deep .mat-tab-disabled {
+    background-color: rgba(0, 0, 0, .2) !important;
+}
+
+::ng-deep .mat-tab-disabled .mat-tab-label-content {
+    color: #676464 !important;
+}
+
+::ng-deep .mat-ink-bar {
+    background-color: rgb(17, 45, 78) !important;
+}

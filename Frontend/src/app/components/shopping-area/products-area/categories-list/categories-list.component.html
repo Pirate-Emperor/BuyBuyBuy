@@ -1,0 +1,5 @@
+<mat-tab-group animationDuration="0ms" (selectedIndexChange)="selectCategoryByIndex($event)">
+    <mat-tab [label]="'All'">{{products}}</mat-tab>
+    <mat-tab [disabled]="searchText !== ''" *ngFor="let c of categories; let i =index,"
+        [label]="c.categoryName">{{products}}</mat-tab>
+</mat-tab-group>

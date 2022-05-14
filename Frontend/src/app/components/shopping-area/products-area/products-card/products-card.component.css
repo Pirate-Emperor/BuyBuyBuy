@@ -1,0 +1,53 @@
+.image-size {
+    height: 170px;
+    margin-bottom: 0;
+}
+
+.mat-card-title {
+    font-size: 14px !important;
+}
+
+mat-card-title {
+    margin-bottom: 0;
+}
+
+.mat-card {
+    background: rgba(249, 247, 247, 0.7);
+    box-shadow: none;
+    cursor: auto;
+}
+
+.mat-card-header {
+    display: inline-block !important;
+}
+
+mat-card-content {
+    margin-bottom: 0;
+}
+
+.add-btn,
+.edit-btn {
+    background-color: rgb(17, 45, 78);
+    color: rgb(249, 247, 247);
+}
+
+.overflow {
+    width: 124px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 3px;
+    text-align: center;
+    width: 195px;
+}
+
+.box:hover {
+    box-shadow: 2px 4px 3px grey;
+    background: rgba(249, 247, 247, 1);
+    cursor: pointer;
+}

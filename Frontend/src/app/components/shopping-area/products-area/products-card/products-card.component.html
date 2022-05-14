@@ -1,0 +1,21 @@
+<div class="box">
+    <mat-card class="item-card">
+        <mat-card-header>
+            <mat-card-title class="overflow" title={{product.productName}}>{{product.productName}}</mat-card-title>
+        </mat-card-header>
+        <img class="image-size" mat-card-image [src]="productsImageUrl + product.imageName" alt="item-image">
+        <mat-card-content>
+            <p>
+                Price: {{product.price | currency: "USD"}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button (click)="addProduct(product)" mat-raised-button class="add-btn" *ngIf="role === userRole">
+                <mat-icon>add</mat-icon>
+            </button>
+            <button (click)="editProduct(product)" mat-raised-button class="edit-btn" *ngIf="role === adminRole">
+                <mat-icon>edit</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

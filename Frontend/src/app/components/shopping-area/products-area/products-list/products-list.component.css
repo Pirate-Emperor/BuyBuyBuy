@@ -1,0 +1,37 @@
+.product-list-container {
+    text-align: center;
+}
+
+.loader {
+    margin: auto;
+    margin-top: 20%;
+    border: 16px solid rgb(110, 184, 208);
+    border-radius: 50%;
+    border-top: 16px solid rgb(144, 195, 122);
+    border-right: 16px solid rgb(237, 183, 144);
+    border-bottom: 16px solid rgb(195, 122, 122);
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

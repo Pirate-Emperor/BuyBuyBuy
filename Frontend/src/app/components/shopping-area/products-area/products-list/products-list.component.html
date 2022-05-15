@@ -1,0 +1,6 @@
+<div class="product-list-container">
+    <div *ngIf="!products" class="loader"></div>
+
+    <app-products-card *ngFor="let p of products" [product]="p" [role]="role" (edit)="editProduct($event)"
+        (add)="addProduct($event)"></app-products-card>
+</div>

@@ -98,16 +98,16 @@ The application will be accessible at:
 ## Application Screenshots
 
 ### Home Page
-![Home Page](Public/Screenshots/home.png)
+![Home Page](https://github.com/Pirate-Emperor/BuyBuyBuy/blob/main/Public/Screenshots/home.png?raw=true)
 
 ### User Registration
-![Register Page](Public/Screenshots/login.png)
+![Register Page](https://github.com/Pirate-Emperor/BuyBuyBuy/blob/main/Public/Screenshots/login.png?raw=true)
 
 ### Shopping Page
-![Shopping Page](Public/Screenshots/shop.png)
+![Shopping Page](https://github.com/Pirate-Emperor/BuyBuyBuy/blob/main/Public/Screenshots/shop.png?raw=true)
 
 ### Admin Dashboard
-![Admin Page](Public/Screenshots/admin.png)
+![Admin Page](https://github.com/Pirate-Emperor/BuyBuyBuy/blob/main/Public/Screenshots/admin.png?raw=true)
 
 ## Features Highlighted
 
